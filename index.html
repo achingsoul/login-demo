@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Login</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <section class="wrapper">
-        <div class="left">
+        <div class="login-page">
             <div class="icon"><img src="./icon.png" alt=""></div>
-            <form>
+            <form class="log-in" name="log-in">
                 <lable class="user">
-
-                    <input type="text" placeholder="Username or e-mail">
+                    <input type="text" name="username" placeholder="Username">
                 </lable>
                 <lable class="pass">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password">
                 </lable>
+                <input class="logIn" type="submit" value="Login">
             </form>
-            <a href="#" class="forgot">Forgot password ?</a>
-            <div class="login" type="submit">Login</div>
-            <div><a href="#" class="create">Create my Trello account !</a></div>
+            <!--<a href="#" class="forgot">Forgot password ?</a>-->
+            <form class="sign-up disabled" name="sign-up">
+                <lable class="user">
+                    <input type="text" name="username" placeholder="Username">
+                </lable>
+                <lable class="email">
+                    <input type="email" name="email" placeholder="E-mail">
+                </lable>
+                <lable class="pass">
+                    <input type="password" name="password" placeholder="Password">
+                </lable>
+                <input class="signUp" type="submit" value="Sign Up">
+                <span class="login">Login my Trello account !</span>
+            </form>
+            <span class="create">Create my Trello account !</span>
+            
         </div>
-        
 
-        <div class="right">
+
+        <div class="home-page">
             <h1>Plan Your Work</h1>
             <p>Lorem Ipsum Sit Dolores Omnia Vanitas</p>
         </div>
     </section>
-
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./node_modules/leancloud-storage/dist/av.js"></script>
+    
 </body>
 </html>

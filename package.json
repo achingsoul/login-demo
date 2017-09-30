@@ -1,0 +1,22 @@
+{
+  "name": "login-demo",
+  "version": "1.0.0",
+  "description": "登录框",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achingsoul/login-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achingsoul/login-demo/issues"
+  },
+  "homepage": "https://github.com/achingsoul/login-demo#readme",
+  "dependencies": {
+    "leancloud-storage": "^3.2.1"
+  }
+}
